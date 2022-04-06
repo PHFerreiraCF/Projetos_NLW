@@ -144,6 +144,10 @@ main {
   color: var(--base-color);
 }
 
+.logo-alt span {
+  color: var(--body-color)
+}
+
 /* ==============NAVIGATION=========== */
 nav {
   height: var(--header-height);
@@ -362,12 +366,24 @@ nav.show div.icon-close {
 /*==========TESTIMONIALS======================== */
 #testimonials {
   background: white;
+  
+  }
+
+#testimonials .container {
+  margin-left: 0;
+  margin-right: 0;
+  }
+
+#testimonials header {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 0;
 }
 
 #testimonials blockquote {
   padding: 2rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
-  border-radius: 00.25rem;
+  border-radius: 0.25rem;
 }
 
 #testimonials blockquote p {
@@ -378,9 +394,9 @@ nav.show div.icon-close {
 }
   
 #testimonials blockquote p span {
-  font: 700 3rem serif;
+  font: 700 2.5rem serif;
   position: absolute;
-  top: -0.5rem;
+  top: -0.375rem;
   left: -1.875rem;
   color: var(--base-color);
 }
@@ -396,4 +412,115 @@ nav.show div.icon-close {
   object-fit: cover;
   clip-path: circle();
   margin-right: 0.5rem;
+}
+
+/*swiper*/
+.swiper-container {
+  position: relative;
+
+}
+.swiper-slide {
+  height: auto;
+  padding: 4rem 1rem;
+}
+
+.swiper-pagination-bullet {
+  width: 0.75rem;  
+  height: 0.75rem;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--base-color);
+}
+
+/*=========CONTACT========*/
+#contact .grid {
+  gap: 4rem;
+}
+
+#contact .text p {
+  margin-bottom: 2rem;
+}
+
+#contact .button i {
+  font-size: 1.5rem;
+  margin-right: 0.625rem;
+}
+
+#contact ul.grid {
+  gap: 2rem;
+}
+
+#contact ul li {
+  display: flex;
+  align-items: center;
+}
+
+#contact ul li i {
+  font-size: 1.5rem;
+  margin-right: 0.625rem;
+  color: var(--base-color);
+  }
+
+  /*=========FOOTER========*/
+footer {
+  background: var(--base-color);
+}
+
+footer .logo {
+ display: inline-block; 
+  margin-bottom: 1.5rem;
+}
+
+footer .brand p {
+  color: var(--text-color-light);
+  margin-bottom: 0.75rem;
+}
+
+footer i {
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+}
+
+footer .social a {
+  margin-right: 2rem;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+footer .social a:hover {
+  transform: translateY(-8px);
+}
+
+/*back to top*/
+.back-to-top {
+  background: var(--base-color);
+  color: var(--text-color-light);
+
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+
+  padding: 0.5rem;
+  clip-path: circle();
+  
+  font-size: 1.5rem;
+  line-height: 0;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: 0.3s;
+  transform: translateY(100%);
+}
+
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*000responsivo*/
+@media (min-width: 992px){
+
 }

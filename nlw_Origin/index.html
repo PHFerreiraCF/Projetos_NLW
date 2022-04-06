@@ -9,6 +9,12 @@
     <!--Icones-->
     <link rel="stylesheet" href="assets/fonts/style.css" />
 
+    <!--Swiper-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
     <!-- Styles -->
     <link rel="stylesheet" href="style.css" />
 
@@ -17,11 +23,6 @@
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
-    />
-    <!--Swiper-->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
   </head>
   <body>
@@ -152,74 +153,135 @@
 
       <!--TESTEMONIALS-->
       <section class="section" id="testimonials">
-        <div class="container grid">
+        <div class="container">
           <header>
             <h2 class="title">Depoimentos de quem já passou por aqui</h2>
           </header>
-          <div class="testimonials">
-            <div class="testimonials">
-              <blockquote>
-                <p>
-                  <span>&ldquo;</span>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Veritatis quo, inventore, quod aliquid sequi quaerat totam
-                  rem, harum aperiam enim saepe delectus labore error voluptas
-                  rerum? Quis itaque reiciendis delectus.
-                </p>
-                <cite>
-                  <img
-                    src="assets/fotos/depoimentoWanessaSouza.jpg"
-                    alt="Foto de Wanessa Souza"
-                  />
-                  Wanessa Souza
-                </cite>
-              </blockquote>
-            </div>
-            <div class="testimonials">
-              <blockquote>
-                <p>
-                  <span>&ldquo;</span>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Veritatis quo, inventore, quod aliquid sequi quaerat totam
-                  rem, harum aperiam enim saepe delectus labore error voluptas
-                  rerum? Quis itaque reiciendis delectus.
-                </p>
-                <cite>
-                  <img
-                    src="assets/fotos/depoimentoFrancieleVenega.jpg"
-                    alt="Foto de Franciele Venega"
-                  />
-                  Franciele Venega
-                </cite>
-              </blockquote>
-            </div>
+          <div class="testimonials swiper-container">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Veritatis quo, inventore, quod aliquid sequi quaerat totam
+                    rem, harum aperiam enim saepe delectus labore error voluptas
+                    rerum? Quis itaque reiciendis delectus.
+                  </p>
+                  <cite>
+                    <img
+                      src="assets/fotos/depoimentoWanessaSouza.jpg"
+                      alt="Foto de Wanessa Souza"
+                    />
+                    Wanessa Souza
+                  </cite>
+                </blockquote>
+              </div>
 
-            <div class="testimonials">
-              <blockquote>
-                <p>
-                  <span>&ldquo;</span>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Veritatis quo, inventore, quod aliquid sequi quaerat totam
-                  rem, harum aperiam enim saepe delectus labore error voluptas
-                  rerum? Quis itaque reiciendis delectus.
-                </p>
-                <cite>
-                  <img
-                    src="assets/fotos/depoimentoCarolinaMCFerreira.jpeg"
-                    alt="Foto de Carolina MC Ferreira"
-                  />
-                  Carolina Mattos de Carvalho Ferreira
-                </cite>
-              </blockquote>
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Veritatis quo, inventore, quod aliquid sequi quaerat totam
+                    rem, harum aperiam enim saepe delectus labore error voluptas
+                    rerum? Quis itaque reiciendis delectus.
+                  </p>
+                  <cite>
+                    <img
+                      src="assets/fotos/depoimentoFrancieleVenega.jpg"
+                      alt="Foto de Franciele Venega"
+                    />
+                    Franciele Venega
+                  </cite>
+                </blockquote>
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Veritatis quo, inventore, quod aliquid sequi quaerat totam
+                    rem, harum aperiam enim saepe delectus labore error voluptas
+                    rerum? Quis itaque reiciendis delectus.
+                  </p>
+                  <cite>
+                    <img
+                      src="assets/fotos/depoimentoCarolinaMCFerreira.jpeg"
+                      alt="Foto de Carolina MC Ferreira"
+                    />
+                    Carolina Mattos de Carvalho Ferreira
+                  </cite>
+                </blockquote>
+              </div>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
+
+      <div class="divider-2"></div>
+
       <!--CONTACT-->
+      <section class="section" id="contact">
+        <div class="container grid">
+          <div class="text">
+            <h2 class="title">Entre em contato com a gente!</h2>
+            <p>
+              Entre em contato com a Beautysalon, queremos tirar suas dúvidas,
+              ouvir suas críticas e sugestões.
+            </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=+5524988329755&text=Oi! Gostaria de fazer uma encomenda."
+              class="button"
+              target="_blank"
+              ><i class="icon-whatsapp"></i> Entrar em contato</a
+            >
+          </div>
+
+          <div class="links">
+            <ul class="grid">
+              <li><i class="icon-phone"></i> 11 99845-6754</li>
+              <li><i class="icon-map-pin"></i> R. Amauri Souza, 346</li>
+              <li><i class="icon-mail"></i> contato@beautysalon.com</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
     </main>
 
+    <footer class="section">
+      <div class="container grid">
+        <div class="brand">
+          <a class="logo logo-alt" href="#home">beauty<span>salon</span>.</a>
+          <p>©2021 Beautysalon.</p>
+          <p>Todos os direitos reservados.</p>
+        </div>
+
+        <div class="social">
+          <a href="https://instagram.com" target="_blank">
+            <i class="icon-instagram"></i>
+          </a>
+          <a href="https://facebook.com" target="_blank">
+            <i class="icon-facebook"></i>
+          </a>
+          <a href="https://youtube.com" target="_blank">
+            <i class="icon-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#home" class="back-to-top"><i class="icon-arrow-up-circle"></i></a>
+
     <!--swiper-->
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!--Scrollreveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <!--main.js-->
     <script src="main.js"></script>
